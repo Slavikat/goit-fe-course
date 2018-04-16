@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v12-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Great Vibes";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/great-vibes-v5-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v12-latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/noto-serif-v6-latin-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/RobotoSlab-Regular-webfont.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding-top: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 940px;
+  margin: 0 auto;
+  align-items: baseline;
+}
+
+.header-main {
+  display: none;
+}
+
+.header-logo {
+  font-family: "Noto Serif";
+  font-size: 26px;
+  text-decoration: none;
+  color: #fed136;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 486px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.header-nav-link {
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-decoration: none;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.header-nav-link:hover {
+  color: #fed136;
+}
+
+.services {
+  display: flex;
+  flex-flow: column;
+  max-width: 940px;
+  justify-content: stretch;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.services-header {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.services-post-header {
+  font-family: "Great Vibes";
+  font-size: 16px;
+  font-style: italic;
+  color: #777777;
+  margin-bottom: 76px;
+  text-align: center;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 290px;
+}
+
+.services-list-item:nth-of-type(1)::before {
+  content: url("../img/icon1.png");
+  padding-bottom: 24px;
+}
+
+.services-list-item:nth-of-type(2)::before {
+  content: url("../img/icon2.png");
+  padding-bottom: 24px;
+}
+
+.services-list-item:nth-of-type(3)::before {
+  content: url("../img/icon3.png");
+  padding-bottom: 24px;
+}
+
+.services-list-item-header {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+.services-list-item-text {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  color: #777777;
+  text-align: center;
+}
+
+.contact {
+  padding-top: 110px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: #222222 url("../img/map.png") no-repeat 100% 85%;
+}
+
+.contact-header {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.contact-post-header {
+  font-family: "Great Vibes";
+  font-size: 16px;
+  font-style: italic;
+  color: #777777;
+  margin-bottom: 74px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-wrapper {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.column-right {
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form-name,
+.contact-form-email,
+.contact-form-subject {
+  min-height: 52px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.contact-form-name::placeholder,
+.contact-form-email::placeholder,
+.contact-form-subject::placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: bold;
+  color: #bbbbbb;
+}
+
+.contact-form-message {
+  width: 456px;
+  min-height: 212px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  resize: none;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  padding: 16px 20px;
+}
+
+.contact-form-message::placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: bold;
+  color: #bbbbbb;
+}
+
+.contact-form-name:valid,
+.contact-form-email:valid,
+.contact-form-message:valid {
+  box-shadow: 0 0 5px 3px #58cf68;
+}
+
+.contact-form-name:invalid:not(:placeholder-shown),
+.contact-form-email:invalid:not(:placeholder-shown),
+.contact-form-message:invalid:not(:placeholder-shown) {
+  box-shadow: 0 0 5px 3px #ff0000;
+}
+
+.contact-form-button {
+  padding: 16px 48px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background-color: #fed136;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 116px;
+  cursor: pointer;
+}
