@@ -1,0 +1,14 @@
+.questions {
+  @extend %container;
+  padding-top: 56px;
+}
+
+.questions_title {
+  @extend %title;
+  text-align: center;
+  margin-bottom: 36px;
+  &--blue {
+    color: $main-blue;
+  }
+}
+
