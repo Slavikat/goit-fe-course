@@ -4,15 +4,22 @@ const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
 const inputLogin = prompt('Введите свой логин');
 
-const checkLoginValidity = inputLogin.length >= 4 && inputLogin.length <= 16;
+const checkLoginValidity = function(inputLogin)
+{
+    let arr = inputLogin.split('');
 
+    if ((arr.length>=4) && (arr.length <= 16)) {
+        return true;
+    }
+    return false;
+}
 const checkIfLoginExists = function (logins, inputLogin) {
     return logins.includes(inputLogin);
 };
 
 
 const addLogin = function (logins, inputLogin) {
-    if (checkLoginValidity === false) {
+    if (checkLoginValidity(inputLogin) === false) {
         alert('Ошибка! Логин должен быть от 4 до 16 символов');
     }
     else if (checkIfLoginExists(logins, inputLogin)) {
